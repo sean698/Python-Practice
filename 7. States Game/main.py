@@ -10,7 +10,6 @@ turtle.shape(image)
 data = pandas.read_csv("States Game/50_states.csv")
 all_states = data["state"].to_list()
 guessed_states = []
-missing_states = []
 
 # Get user's guess
 def popup_prompt():
@@ -39,9 +38,7 @@ while len(guessed_states) < 50:
         write_answer(guess, guess_coor)
         guessed_states.append(guess)
     if guess == "Exit":
-        for state in all_states:
-            if state not in guessed_states:
-                missing_states.append(state)
+        missing_states = [state for state in all_states if state not in guessed_states]
         df = pandas.DataFrame(missing_states)
         df.to_csv("States Game/missing_states.csv")
         break

@@ -12,12 +12,12 @@ window.title("Kanye Says...")
 window.config(padx=50, pady=50)
 
 canvas = Canvas(width=400, height=400)
-quote_img = PhotoImage(file="9. Pomodoro/quote.png")
+quote_img = PhotoImage(file="9. Kanye Quotes/quote.png")
 canvas.create_image(200, 200, image=quote_img)
 quote_text = canvas.create_text(200, 200, text="Kanye Quotes Goes Here", width=200)
 canvas.grid(row=0, column=0)
 
-kanye_img = PhotoImage(file="9. Pomodoro/Kanye.png")
+kanye_img = PhotoImage(file="9. Kanye Quotes/Kanye.png")
 button = Button(image=kanye_img, command=get_quotes, highlightthickness=0)
 button.grid(row=1, column=0)
 

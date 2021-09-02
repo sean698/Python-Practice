@@ -3,11 +3,11 @@ import pandas
 
 screen = turtle.Screen()
 screen.title("U.S. States Game")
-image = "States Game/blank_states_img.gif"
+image = "7. States Game/blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
-data = pandas.read_csv("States Game/50_states.csv")
+data = pandas.read_csv("7. States Game/50_states.csv")
 all_states = data["state"].to_list()
 guessed_states = []
 
@@ -40,5 +40,5 @@ while len(guessed_states) < 50:
     if guess == "Exit":
         missing_states = [state for state in all_states if state not in guessed_states]
         df = pandas.DataFrame(missing_states)
-        df.to_csv("States Game/missing_states.csv")
+        df.to_csv("7. States Game/missing_states.csv")
         break

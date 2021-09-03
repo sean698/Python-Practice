@@ -6,8 +6,8 @@ from twilio.rest import Client
 CITY_ID = 1813451
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
 API_KEY = "c5811c44b6b0dfa9598a4898a97f91df"
-MY_LAT = 40.214211
-MY_LNG = -77.700089
+MY_LAT = 40.071766
+MY_LNG = 113.316421
 account_sid = 'AC8aba41cd2344beadecc46c1b1f123b4c'
 auth_token = '2f2eac956c100e85be9956d1a5771469'
 my_phone = '+8613834257554'

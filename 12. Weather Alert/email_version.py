@@ -7,8 +7,8 @@ import time
 
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
 API_KEY = "c5811c44b6b0dfa9598a4898a97f91df"
-MY_LAT = 5.9780066
-MY_LNG = 116.0728988
+MY_LAT = 40.071766
+MY_LNG = 113.316421
 MY_EMAIL = "1084927875@qq.com"
 MY_PWD = "bvgaeyfivuuifgic"
 

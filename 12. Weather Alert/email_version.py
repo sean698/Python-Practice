@@ -48,7 +48,7 @@ def job():
     else:
         print("There is no rain today.")
 
-schedule.every().day.at("8:00").do(job)
+schedule.every().day.at("08:00").do(job)
 
 while True:
     schedule.run_pending()

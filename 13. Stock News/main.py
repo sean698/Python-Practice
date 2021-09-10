@@ -57,8 +57,7 @@ if diff_percent < 1:
     client = Client(account_sid, auth_token)
 
     for article in formatted_articles:
-        message = client.messages \
-                        .create(
+                         .create(
                             body=article,
                             from_='+15017122661',
                             to=my_phone

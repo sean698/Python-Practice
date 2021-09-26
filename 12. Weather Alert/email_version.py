@@ -41,18 +41,13 @@ def will_rain():
             return True
     return False
 
-def job():
-    if will_rain():
-        send_mail()
-        print("A email has been sent.")
-    else:
-        print("There is no rain today.")
+if will_rain():
+    send_mail()
+    print("A email has been sent.")
+else:
+    print("There is no rain today.")
 
-schedule.every().day.at("08:00").do(job)
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
 
     
 
